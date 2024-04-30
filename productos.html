@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - GYMRATS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Agregar Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-lg font-semibold"><a href="#">GYMRATS</a></h1>
+
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-purple-400">Inicio</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container mx-auto mt-8 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Aquí se repiten los productos -->
+                    <div class="swiper-slide">
+                        <div class="bg-gray-200 rounded-lg p-4 flex flex-col items-center justify-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmtBiF7_d4tBFasPv96dIUifHdNM-PUFIMwg&s" alt="Producto 1" class="mb-4">
+                            <h3 class="text-lg font-semibold mb-2">PROTEINA DRAGON BALL</h3>
+                            <p class="text-gray-600">La proteina que necesitas para ponerte como un verdadero Sayayin</p>
+                            <p class="text-purple-500 font-semibold mt-2">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-gray-200 rounded-lg p-4 flex flex-col items-center justify-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpbe1F-w-8qsQHqH76Dm_-K6Bc00dwR-_Cog&s" alt="Producto 2" class="mb-4">
+                            <h3 class="text-lg font-semibold mb-2">PROTEINA BLACK MEN</h3>
+                            <p class="text-gray-600">Si eres una amigaaaa mas, necesitas esta proteina.</p>
+                            <p class="text-purple-500 font-semibold mt-2">$24.99</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-gray-200 rounded-lg p-4 flex flex-col items-center justify-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV6hFOHbd1Hw_ntAg1KK0bs5AnS05MAebd9g&s" alt="Producto 2" class="mb-4">
+                            <h3 class="text-lg font-semibold mb-2">PROTEINA RED MEN</h3>
+                            <p class="text-gray-600">Con esta proteia estaras mejor que Arnold</p>
+                            <p class="text-purple-500 font-semibold mt-2">$44.99</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="bg-gray-200 rounded-lg p-4 flex flex-col items-center justify-center">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA6kPw15yAL7X1V_pvYrw49FFjI2pl7JpjPA&s" alt="Producto 2" class="mb-4">
+                            <h3 class="text-lg font-semibold mb-2">PACK DE SUPLEMENTOS</h3>
+                            <p class="text-gray-600">El mejor pack para ponerte como le gustas a las mujeres</p>
+                            <p class="text-purple-500 font-semibold mt-2">$56.99</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agregar navegación de paginación -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- Agregar botón de volver al inicio -->
+            <a href="index.html" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-500 transition duration-300 mt-4">Volver al inicio</a>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <div class="mb-4 lg:mb-0">
+                <h3 class="text-xl font-semibold">GYMRATS</h3>
+                <p class="text-gray-400">EL MEJOR GYM PARA TI</p>
+            </div>
+
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-400 hover:text-white">Inicio</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Agregar Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - GYMRATS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white py-4">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-lg font-semibold"><a href="#">GYMRATS</a></h1>
+
+            <div class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 cursor-pointer" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </div>
+
+            <nav class="hidden md:flex space-x-4">
+                <a href="index.html" class="hover:text-purple-400">Inicio</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container mx-auto mt-8 px-4">
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+            <p class="text-gray-600 mb-4">¡Nos encantaría saber de ti! Por favor, completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.</p>
+            
+            <form action="#" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700">Nombre</label>
+                    <input type="text" id="name" name="name" class="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+                    <input type="email" id="email" name="email" class="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700">Mensaje</label>
+                    <textarea id="message" name="message" rows="4" class="mt-1 focus:ring-purple-500 focus:border-purple-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="inline-block bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-500 transition duration-300">Enviar mensaje</button>
+                </div>
+            </form>
+            
+            <a href="index.html" class="inline-block mt-4 text-sm text-purple-600 hover:underline">Volver al inicio</a>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <div class="mb-4 lg:mb-0">
+                <h3 class="text-xl font-semibold">GYMRATS</h3>
+                <p class="text-gray-400">EL MEJOR GYM PARA TI</p>
+            </div>
+
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-gray-400 hover:text-white">Inicio</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
